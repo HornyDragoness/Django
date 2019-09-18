@@ -8,11 +8,13 @@
     <h2><em><center>Check it out now! </center> </em></h2>
     <div>
         <h1><center><a href="/">Hot Ricardo Milos pictures</a></center></h1>
+
 {% for post in posts %}
     <div>
+        <br style="margin-bottom:240px;"/>
         <p>published: {{ post.published_date }}</p>
         <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <h3>{{ post.text|linebreaksbr }}</h3>
     </div>
 {% endfor %}
     </div>
