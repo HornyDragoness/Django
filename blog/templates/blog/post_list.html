@@ -1,23 +1,34 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Ricardo for boys</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h2><em><center>Check it out now! </center> </em></h2>
-    <div>
-        <h1><center><a href="/">Hot Ricardo Milos pictures</a></center></h1>
+    <div class="page-header">
+        <h1><center><a href="/">Holy's blog</a></center></h1>
+    </div>
 
 {% for post in posts %}
-    <div>
-        <br style="margin-bottom:240px;"/>
+    <div class="post">
+        <br style="margin-bottom:350px;"/>
         <p>published: {{ post.published_date }}</p>
         <h2><a href="">{{ post.title }}</a></h2>
         <h3>{{ post.text|linebreaksbr }}</h3>
+        <hr/>
     </div>
 {% endfor %}
-    </div>
 
+    <div class="ricardo">
+            <h2 class="chk"><em><center>! Secret area below ! </center> </em></h2>
+        <h3 class="ssylk"><center><a href='https://youtu.be/rixzL5WlS-Y?t=17'><button>Forbidden beauty</button></a></center></h3>
+        <br style="margin-bottom:240px;"/>
+        <p class = "ccc">(C) 2019 - Все права покусаны Касминой</p>
+    </div>
 </body>
 </html>

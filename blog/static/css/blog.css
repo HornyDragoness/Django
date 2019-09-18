@@ -1,0 +1,34 @@
+h1 a, h2 a {
+    color: #25C80A;
+    font-family: 'Lobster';
+}
+body {
+    padding-left: 40px;
+}
+.page-header {
+    background-color: #37769A;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+.ricardo {
+    background-color: #37769A;
+    margin-top: 20 px;
+    padding: 20px 20px 20px 40px;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000000;
+    margin: 1em 0;
+    padding: 0;
+}
+.ccc {
+    color: #FFD0CB;
+}
+.chk {
+    color: #B6F7F5;
+}
+.ssylk {
+    color: #FE6D4E;
+}
